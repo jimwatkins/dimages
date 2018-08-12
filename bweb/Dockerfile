@@ -1,6 +1,18 @@
 # Use an official Python runtime as a parent image
 FROM python:latest
 
+# server tools
+RUN apt-get update && apt-get install -y \
+        openssh-server \
+        nano \
+        vsftpd
+
+RUN useradd -ms /bin/bash bridger 
+RUN yes bridger | passwd bridger
+RUN useradd -ms /bin/bash jim
+RUN yes amanda | passwd jim
+
+
 # Set the working directory to /app
 WORKDIR /app
 
@@ -17,4 +29,4 @@ EXPOSE 80
 ENV NAME World
 
 # Run app.py when the container launches
-CMD ["python", "app.py"]
+#CMD ["python", "app.py"]
