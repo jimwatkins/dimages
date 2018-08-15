@@ -1,18 +1,6 @@
 # Use an official Python runtime as a parent image
 FROM python:latest
 
-# server tools
-RUN apt-get update && apt-get install -y \
-        openssh-server \
-        nano \
-        vsftpd
-
-RUN useradd -ms /bin/bash bridger 
-RUN yes bridger | passwd bridger
-RUN useradd -ms /bin/bash jim
-RUN yes amanda | passwd jim
-
-
 # Set the working directory to /app
 WORKDIR /app
 
@@ -24,9 +12,15 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
+EXPOSE 22
+EXPOSE 21
 
 # Define environment variable
 ENV NAME World
 
+RUN ./setup.sh
+
 # Run app.py when the container launches
+CMD ["/etc/init.d/ssh", "restart"]
+CMD ["python"]
 #CMD ["python", "app.py"]
