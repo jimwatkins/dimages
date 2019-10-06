@@ -14,5 +14,7 @@ yes bridger | passwd bridger
 useradd -ms /bin/bash jim
 yes amanda | passwd jim
 
-service ssh start
 systemctl enable ssh
+
+service ssh start
+
