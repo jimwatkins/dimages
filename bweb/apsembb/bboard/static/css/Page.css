@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+	width: 200x;
+	background-color:#8CEDF5
+}
+#mainHeader {
+	height: 60px;
+	left: 0px;
+	margin-left: 50px;
+
+}
+#mainFooter {
+	height: 60px;
+}
+#mainFooter #link1 {
+	height: 50px;
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+}
+#mainFooter #link1 {
+	height: 50px;
+	margin-left: 5px;
+	margin-top: 5px;
+	float: left;
+}
+#mainFooter #link2 {
+	float: left;
+	height: 5px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#mainFooter #link3 {
+	margin-left: 5px;
+	margin-top: 5px;
+	height: 5px;
+	float: left;
+	width: auto;
+}
+#replyLink {
+	margin-top: 5px;
+	height: 5x;
+	float: none;
+}

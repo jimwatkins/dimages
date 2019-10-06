@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+{% load static %}
+<link href="../../../../../Users/bridger/Documents/Billboard Program/css/Login.css" rel="stylesheet" type="text/css">
+
+<style>
+body {
+    background-color: #92a8d1;
+}
+</style>
+</head>
+
+<body>
+
+<header><img src="{% static 'images/siteHeader.png' %}" width="300" height="60"/></header>
+
+
+<form method="POST" action="/loginUser">
+  {% csrf_token %}
+  Enter Username:
+  <input type="text" name="textfield4">
+  Enter Password:
+  <input type="text" name="textfield5">
+  <button type="submit">Login</button>
+  </form>
+
+<article id="mainFooter">
+  <article id="link1"><a href="/welcome">Go to home page</a></article>
+  <article id="link2"><a href="/forum">Go to forum</a></article>
+  <article id="link3"><a href="/register">Register</a></article>
+</article>
+</body>
+</html>

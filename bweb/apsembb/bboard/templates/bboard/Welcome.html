@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome</title>
+<style type="text/css">
+body {
+    background-color: #92a8d1;
+	width: 600px;
+}
+
+#mainArticle {
+	height: 500px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#linksSection {
+	height: 60px;
+	float: none;
+	margin-top: 40px;
+}
+#linksSection #link1 {
+	height: 50px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 50px;
+}
+#linksSection #link2 {
+	height: 50px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 150px;
+}
+#linksSection #link3 {
+	height: 50px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 150px;
+}
+</style>
+</head>
+
+<body>
+<h1>Welcome to my bulletin board website!</h1>
+<article id="mainArticle"><p>How this website was created:</p> <p>To start, I installed Adobe Dreamweaver, Django, and Visual Studio Code – Insiders to help create the website. Django functioned as a framework for the programming language Python, and I used the Visual Studio Code – Insiders program to view and edit the code. Adobe Dreamweaver was used to create and edit html files to serve as templates for the code. </p> <p> I viewed tutorials on how to create and format html files in Adobe Dreamweaver, and also spent time following a tutorial on how to create a project in Django. The Django tutorial helped me create a project that allowed a user to create questions for other users to vote on, as well as view the results of the polls. </p> <p> After finishing this tutorial, I started to work on the bulletin board website, using the code from the tutorial project as a reference for the Django language syntax. I created the different webpages that I wanted to use for the project in Adobe Dreamweaver as html files, and then copied them into the Django project file. I then used views to call the templates and mapped them to different urls within the web site. After learning more about the Django syntax online, I was able to write the code enabling users to register accounts and login. I also programmed an html file in Django to allow for the posting of comments and the tracking of which user posted them and when. This involved creating a “Comment” model in Django, which was a basic character field that could be used in different views and was interactive with all users. </p> <p>Afterwards, I hosted the website on a server and tested it for errors. The bulletin board website successfully ran on the server and functioned correctly. </p></article>
+<section id="linksSection">
+  <article id="link1"><a href="/forum">Go to forum</a></article>
+  <article id="link2"><a href="/login">Login</a></article>
+  <article id="link3"><a href="/register">Register</a></article>
+</section>
+</body>
+</html>

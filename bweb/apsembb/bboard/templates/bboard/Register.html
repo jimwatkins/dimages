@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Register</title>
+<style type="text/css">
+<link href="../../../../../Users/bridger/Documents/Billboard Program/css/Billboard.css" rel="stylesheet" type="text/css" </style>
+
+<style>
+body {
+    background-color: #92a8d1;
+}
+</style>
+
+
+</head>
+
+<body>
+<header id="mainHeader"><img src="../../../../../Users/bridger/Documents/Billboard Program/Images/Site Header.png" width="1000" height="60" alt=""/></header>
+<article id="mainArticle">
+  
+
+
+  <form method="POST" action="/createAccount">
+    {% csrf_token %}
+    Enter Username:
+    <input type="text" name="textfield2">
+    Enter Password:
+    <input type="text" name="textfield3">
+    <button type="submit">Register</button>
+    </form>
+
+
+ 
+
+</article>
+<footer id="mainFooter">
+  <article id="link1"><a href="/welcome">Go to home page</a></article>
+  <article id="link2"><a href="/forum">Go to forum</a></article>
+  <article id="link3"><a href="/login">Login</a></article>
+</footer>
+</body>
+</html>

@@ -23,4 +23,4 @@ RUN ./setup.sh
 # Run app.py when the container launches
 CMD ["/etc/init.d/ssh", "restart"]
 CMD ["python"]
-#CMD ["python", "app.py"]
+CMD ["python", "app.py"]

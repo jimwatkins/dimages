@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forum</title>
+{% load static %}
+<style type="text/css">
+<link href="{% static 'css/Page.css' %}" rel="stylesheet" type="text/css">
+</style>
+<style>
+
+body {
+    background-color: #92a8d1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header><img src="{% static 'images/siteHeader.png' %}" width="300" height="60"/></header>
+<section>
+  <article>Welcome,</article>
+  <article id="mainTextBox">
+    <p>This is the forum page.</p>
+    <p>&nbsp; </p>
+  </article>
+</section>
+
+<form method="POST" action="/postComment">
+  {% csrf_token %}
+  <input type="text" name="textfield">
+  <button type="submit">Post comment</button>
+  </form>
+
+  {% for comment in comment_list %}
+  <p> Comment: {{ comment.comment_text }} <br> By: {{ comment.comment_user }} |Date: {{ comment.pub_date }}
+  {% endfor %}
+
+<footer >
+  <article id="link1"><a href="/welcome">Go to home page</a></article>
+  <article id="link2"><a href="/login">Login</a></article>
+  <article id="link3"><a href="/register">Register</a></article>
+</footer>
+</body>
+</html>

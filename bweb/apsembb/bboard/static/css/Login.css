@@ -1,0 +1,61 @@
+@charset "utf-8";
+#mainHeader {
+}
+#mainHeader {
+	height: 60px;
+	margin-left: 500px;
+}
+
+#mainArticle #usernameArticle {
+}
+#mainArticle #usernameArticle {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	height: 50px;
+	margin-left: 30px;
+}
+
+#mainArticle #passwordArticle {
+}
+#mainArticle #passwordArticle {
+	height: 50px;
+	margin-bottom: 100px;
+	margin-left: 30px;
+}
+
+#mainArticle #registerLink {
+}
+#mainArticle #registerLink {
+	margin-left: 50px;
+	height: 30px;
+	float: left;
+}
+
+#mainFooter {
+	height: 60px;
+	margin-top: 30px;
+}
+#mainFooter #link1 {
+	height: 50px;
+	margin-top: 5px;
+	margin-left: 600px;
+	float: left;
+}
+#mainFooter #link2 {
+	height: 50px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 300px;
+}
+#mainFooter #link3 {
+	height: 50px;
+	margin-top: 5px;
+	margin-left: 300px;
+	float: left;
+}
+#mainArticle {
+}
+#mainArticle {
+	height: 800px;
+	margin-top: 30px;
+}
