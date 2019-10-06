@@ -20,10 +20,6 @@ ENV NAME World
 
 RUN ./setup.sh
 
-CMD ["service", "ssh", "start"]
-
 # Run app.py when the container launches
-
-#CMD ["/bin/bash"]
-# CMD ["cd", "apsembb"]
-CMD ["python3", "manage.py", "runserver"]
+CMD ["/app/startup.sh"]
+# CMD ["/bin/bash"]

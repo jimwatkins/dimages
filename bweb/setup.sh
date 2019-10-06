@@ -14,7 +14,7 @@ yes bridger | passwd bridger
 useradd -ms /bin/bash jim
 yes amanda | passwd jim
 
-systemctl enable ssh
+python3 /app/apsembb/manage.py migrate
 
-service ssh start
+systemctl enable ssh
 
