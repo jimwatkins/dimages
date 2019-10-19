@@ -25,7 +25,7 @@ SECRET_KEY = 'n3p&w64*c(@g*b33a#4a_br^ow(qc#82pxc4vqxw7vdics5*9@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.70', 'www.bigskyway.com', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
