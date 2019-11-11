@@ -1,2 +1,2 @@
-docker build -t bweb .
+docker build -t jimwatkins/bweb .
 
